@@ -39,7 +39,14 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "indent" : [0, "space"],
+      "no-ident" : 0,
+      "no-tabs" : 0,
+      "max-len" : 0,
+      "key-spacing" : 0,
+      "comma-dangle" : 0
+    }
   },
   "browserslist": [
     "> 1%",
