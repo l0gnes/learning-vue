@@ -1,13 +1,14 @@
 <template>
     <table>
         <tr>
-            <td>
+            <th>
                 <img :src="require(`../assets/${postImage}`)"/>
-            </td>
+            </th>
             <td>
-                <h1>
+                <h3>
                     {{ postHeader }}
-                </h1>
+                </h3>
+                <hr/>
                 <p>
                     {{ postContent }}
                 </p>
@@ -22,11 +23,30 @@ export default {
 	props: {
         postHeader : String,
         postContent : String,
-        postImage : URL
-    },
+        postImage : String
+    }
 };
 </script>
 
 <style scoped>
+
+img {
+    width: 20vw;
+    height: 20vw;
+    margin: 0.25rem;
+}
+
+table {
+    border-style: double;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+td {
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 1rem;
+}
 
 </style>
