@@ -8,6 +8,7 @@ import router from './router';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import '@/assets/boopdev.css';
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
