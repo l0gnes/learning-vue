@@ -1,7 +1,25 @@
 <template>
   <div class='home'>
-    <MakeNewPost/>
     <!--<img alt='Vue logo' src='../assets/logo.png'>-->
+    <b-jumbotron
+      header='Welcome to Alexs New Bad Website'
+      lead='You wont find one that is worse than this.'
+    >
+    <b-button-group>
+      <b-button>
+        Buy me a Coffee <b-icon-cup-fill></b-icon-cup-fill>
+      </b-button>
+      <b-button>
+        Explore the World! <b-icon-globe></b-icon-globe>
+      </b-button>
+      <b-button href='https://github.com/l0gnes'>
+        View Projects <b-icon-github></b-icon-github>
+      </b-button>
+    </b-button-group>
+    </b-jumbotron>
+
+    <MakeNewPost/>
+
     <PostContainer
       v-for='post in posts'
       v-bind:key='post.id'
@@ -35,3 +53,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.jumboButtonGroup {
+  color: blue;
+}
+</style>

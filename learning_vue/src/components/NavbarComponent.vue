@@ -1,22 +1,20 @@
 <template>
-    <table>
-        <tr>
-            <th colspan=3>
-                Alex's Bad Site
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <router-link to="/">Home</router-link>
-            </td>
-            <td>
-                <router-link to="/about">About</router-link>
-            </td>
-            <td>
-                <router-link to="/hometown">Hometown</router-link>
-            </td>
-        </tr>
-    </table>
+
+    <b-navbar toggeable='lg' type='dark' variant="dark">
+        <b-navbar-brand href='#'>Lognes</b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id='nav-collapse' is-nav>
+            <b-navbar-nav>
+                <b-nav-item to='' active-class="active">Home</b-nav-item>
+                <b-nav-item to='about' active-class="active">About Me</b-nav-item>
+                <b-nav-item to='hometown' active-class="active">Hometown</b-nav-item>
+            </b-navbar-nav>
+        </b-collapse>
+
+    </b-navbar>
+
 </template>
 
 <script>

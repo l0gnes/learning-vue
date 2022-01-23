@@ -1,10 +1,7 @@
 <template>
-    <table>
-        <tr>
-            <td>
-                <b-button v-b-modal.makePostModal id='makePostButton'><b-icon icon='plus'></b-icon> New Post</b-button>
-            </td>
-        </tr>
+    <div>
+
+        <b-button v-b-modal.makePostModal id='makePostButton'><b-icon icon='plus'></b-icon> New Post</b-button>
 
         <b-modal id='makePostModal'
             title="Create a new post!"
@@ -27,6 +24,7 @@
                         type='text'
                         placeholder='Header Text'
                         required
+                        autocomplete="off"
                     ></b-form-input>
                 </b-form-group>
 
@@ -42,13 +40,14 @@
                         type='text'
                         placeholder="Post Content"
                         required
+                        autocomplete="off"
                     ></b-form-textarea>
                 </b-form-group>
 
             </b-form>
 
         </b-modal>
-    </table>
+    </div>
 </template>
 
 <script>
@@ -84,19 +83,3 @@ export default {
     }
 };
 </script>
-
-<style scoped>
-
-table {
-    width: 100%;
-    vertical-align: center;
-    text-align: right;
-    border-style: double;
-    margin-top: 0.5rem;
-}
-
-#makePostButton {
-    margin: 0.25rem 0.5rem;
-}
-
-</style>
