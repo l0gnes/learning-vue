@@ -1,9 +1,14 @@
 <template>
-  <div class='home'>
+  <b-container
+    fluid
+    class='p-0'
+  >
     <!--<img alt='Vue logo' src='../assets/logo.png'>-->
     <b-jumbotron
       header='Welcome to Alexs New Bad Website'
       lead='You wont find one that is worse than this.'
+      id='mainJumbotron'
+      class='px-5'
     >
     <b-button-group>
       <b-button>
@@ -20,6 +25,9 @@
 
     <MakeNewPost/>
 
+    <b-container>
+    </b-container>
+
     <PostContainer
       v-for='post in posts'
       v-bind:key='post.id'
@@ -27,7 +35,7 @@
       v-bind:postContent='post.content'
       v-bind:postImage='post.image'
     ></PostContainer>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -55,7 +63,7 @@ export default {
 </script>
 
 <style scoped>
-.jumboButtonGroup {
-  color: blue;
+#mainJumbotron {
+  text-align: left;
 }
 </style>

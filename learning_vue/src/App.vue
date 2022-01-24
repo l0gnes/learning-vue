@@ -4,10 +4,10 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>-->
-    <div id="pageContent">
+    <b-container fluid class='px-5'>
       <NavbarComponent/>
       <router-view/>
-    </div>
+    </b-container>
   </div>
 </template>
 
@@ -38,10 +38,5 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
-
-#pageContent {
-  width: 80%;
-  margin: 0 auto;
 }
 </style>
