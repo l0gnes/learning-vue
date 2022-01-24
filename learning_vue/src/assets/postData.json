@@ -1,14 +1,20 @@
 [
     {
         "id" : 0,
-        "header" : "Hello World!",
-        "content" : "Bingus!",
-        "image" : "bingus.jpg"
+        "header" : "Midnight Bliss",
+        "content" : "You know that the stars in the sky can see us from thousands of lightyears away? Are we look up at them in awe as we shit in sinks.",
+        "image" : ""
     },
     {
         "id" : 1,
-        "header" : "Funny Cat!",
-        "content" : "Cat!",
-        "image" : "cat.png"
+        "header" : "You suck.",
+        "content" : "Wow, I truly can't believe you drove yourself mad thinking that you could be something more than what you are, a talentless hack, nothing more than the dirt under my boot.",
+        "image" : ""
+    },
+    {
+        "id" : 2,
+        "header" : "Growing pains.",
+        "content" : "You know you've reached middle age when you're cautioned to slow down by your doctor, instead of by the police.",
+        "image" : ""
     }
 ]

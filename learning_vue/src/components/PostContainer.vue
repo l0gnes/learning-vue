@@ -1,20 +1,21 @@
 <template>
-    <table>
-        <tr>
-            <th>
-                <img :src="require(`../assets/${postImage}`)"/>
-            </th>
-            <td>
-                <h3>
-                    {{ postHeader }}
-                </h3>
-                <hr/>
-                <p>
-                    {{ postContent }}
-                </p>
-            </td>
-        </tr>
-    </table>
+    <b-card
+        img-src="https://picsum.photos/200/200?random"
+        img-left class='mb-2 bg-dark text-white'
+    >
+        <b-card-text>
+            <h3>
+                {{ postHeader }}
+            </h3>
+            <hr>
+            <p>
+                {{ postContent }}
+            </p>
+            <b-button variant="info">
+                Show More <b-icon-link45deg/>
+            </b-button>
+        </b-card-text>
+    </b-card>
 </template>
 
 <script>
