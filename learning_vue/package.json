@@ -53,7 +53,9 @@
       "no-tabs": 0,
       "max-len": 0,
       "key-spacing": 0,
-      "comma-dangle": 0
+      "comma-dangle": 0,
+      "no-unused-vars" : 0,
+      "prefer-const" : 0
     }
   },
   "browserslist": [
