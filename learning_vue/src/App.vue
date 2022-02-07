@@ -6,16 +6,6 @@
     </div>-->
     <b-container fluid class='px-5'>
       <NavbarComponent/>
-
-      <b-alert show variant='danger' class='my-1'>
-        <h4>
-          <b-icon-heart-fill/>
-          Happy Valentines Day!
-        </h4>
-        <hr/>
-        <strong>50% OFF</strong> all store items with coupon code <code>VALENTINESDAY</code>
-      </b-alert>
-
       <router-view/>
     </b-container>
   </div>
@@ -23,11 +13,13 @@
 
 <script>
 import NavbarComponent from '@/components/NavbarComponent.vue';
+// import SiteWideAlertComponent from '@/components/SiteWideAlertComponent.vue';
 
 export default {
   name: 'App',
   components : {
-    NavbarComponent
+    NavbarComponent,
+    // SiteWideAlertComponent,
   }
 };
 </script>

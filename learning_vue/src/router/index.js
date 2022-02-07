@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Hometown from '@/views/Hometown.vue';
+import Audio from '@/views/MusicPlayer.vue';
 import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
@@ -23,6 +24,11 @@ const routes = [
 		path: '/hometown',
 		name: 'Hometown',
 		component: Hometown
+	},
+	{
+		path: '/audio',
+		name: 'Audio',
+		component: Audio
 	}
 ];
 

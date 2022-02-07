@@ -10,6 +10,7 @@
                 <b-nav-item to='' active-class="active">Home</b-nav-item>
                 <b-nav-item to='about' active-class="active">About Me</b-nav-item>
                 <b-nav-item to='hometown' active-class="active">Hometown</b-nav-item>
+                <b-nav-item to='audio' active-class="active">Music Player</b-nav-item>
 
             </b-navbar-nav>
 
